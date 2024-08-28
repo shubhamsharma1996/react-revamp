@@ -1,32 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-// React.createElement => ReactElement JS Object => HTMLElement(render)
-const heading = React.createElement(
-  "h1",
-  { id: "heading" },
-  "This is the reavamp of React"
-);
+const TitleComponent = () =>(
+   <h1 className="title"> React Component </h1>
+)
 
-// jsx is not html inside the Javascript, it is kind of linke html
-// JSX => React.createElement => ReactElement JS Object => HTMLElement
-// Bable transpile before it raches the JS engine
+const nameElement = (
+   <h3>I'm a react developer.</h3>
+)
 
-const jsxHeading = <h1 id="heading">Hi My name is shubham</h1>;
+const HeadingComoponent = () =>(
+   <div id='container'>
+      <TitleComponent />
+      <h2 id="heading">Hi My name is shubham and this is a functional component.</h2>
+      {nameElement}
+   </div>
+)
+
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(jsxHeading);
+root.render(<HeadingComoponent/>);
 
-/**
- * ReactElement(Object) => HTML(Browser understand)
- */
 
-// using js
-/**
- * 
-    const heading = document.createElement("h1");
-    heading.textContent = "Hello to the new beginning of the preparation";
-    const rootElement = document.getElementById("root");
-    rootElement.appendChild(heading);
- * 
- */

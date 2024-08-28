@@ -1,0 +1,36 @@
+//React Element
+const jsxHeading = <h1 id="heading">Hi My name is shubham</h1>;
+
+//React Component
+const HeadingComoponent = () =>(
+    <h1 id="heading">Hi My name is shubham and this is a functional component.</h1>
+)
+
+
+//React Component are of two types
+/**
+ * Class Based Component - Old way to create
+ * Functional component - New way to create ( a normal function which return jsx)
+ */
+
+//component composition - means to include another component in the component.
+ const TitleComponent = () =>(
+   <h1 className="title"> React Component </h1>
+)
+const HeadingComoponent = () =>(
+   <div id='container'>
+      {TitleComponent()}
+      <TitleComponent />
+      <TitleComponent><TitleComponent />
+      <h2 id="heading">Hi My name is shubham and this is a functional component.</h2>
+   </div>
+)
+
+we can write any js code inside components by using "{}" paranthesis.
+
+we can call the component by these three types:
+-->   {TitleComponent()}
+-->    <TitleComponent />
+-->   <TitleComponent><TitleComponent />
+ 
+JSX sanatize the data and it prevents Cross Site scripting attack.

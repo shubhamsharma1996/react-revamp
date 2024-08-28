@@ -1,0 +1,24 @@
+package.json is a configuration file for NPM,
+dev dependencies
+caret ^, tilde ~
+diff between package.json and package-lock.json,
+transitive dependencies,
+npx 
+
+
+--->Parcel
+Dev Build,
+Local server,
+HMR - Hot Module Replacement
+File Watching Algorithms
+Caching - Faster Build
+Image Optimization
+Minification of files
+Bundling
+Compress    
+Consistent Hashing
+Differential Bundling - support older browsers
+Diagnostic
+Error handling
+HTTPs
+Tree Shaking

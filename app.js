@@ -1,16 +1,27 @@
-const heading = React.createElement('h1',{id:'heading'},"This is the reavamp of React");
+import React from "react";
+import ReactDOM from "react-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// React.createElement => ReactElement JS Object => HTMLElement(render)
+const heading = React.createElement(
+  "h1",
+  { id: "heading" },
+  "This is the reavamp of React"
+);
 
-root.render(heading);
+// jsx is not html inside the Javascript, it is kind of linke html
+// JSX => React.createElement => ReactElement JS Object => HTMLElement
+// Bable transpile before it raches the JS engine
 
-console.log(root);
+const jsxHeading = <h1 id="heading">Hi My name is shubham</h1>;
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(jsxHeading);
+
 /**
  * ReactElement(Object) => HTML(Browser understand)
  */
 
-
-// using js 
+// using js
 /**
  * 
     const heading = document.createElement("h1");
@@ -19,4 +30,3 @@ console.log(root);
     rootElement.appendChild(heading);
  * 
  */
-

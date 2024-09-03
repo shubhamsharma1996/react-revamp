@@ -1,3 +1,55 @@
 #heading{
     color: red;
 }
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem ;
+}
+
+.logo{
+    width: 6rem;
+}
+
+.heading-links{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.heading-links a{
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.heading-links a:hover{
+    color: #333333;
+    transition: color 0.3s ease;
+}
+
+.restaurant-container {
+    padding: 0px;
+    list-style: none;
+    margin-block-end: 0px;
+    display: grid;
+    -webkit-box-align: start;
+    align-items: start;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin: 32px 16px;
+}
+
+.restaurant-card {
+    display: grid;
+    transition: 0.05s;
+    cursor: pointer;
+    gap: 12px;
+    grid-auto-flow: row;
+    justify-content: stretch;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+}

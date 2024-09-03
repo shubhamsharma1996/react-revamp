@@ -1,0 +1,18 @@
+wireframe of the app 
+
+/**
+ * HeadingComoponent of the app ------------------------
+        * Logo of the app
+        * Nav Links
+  * Body comoponent of the app  ------------------------
+        * Seacrh Bar
+        * RestaurantContainer
+            * RestaurantCard
+  *  Footer comoponent of the app -----------------------
+        * Copyright
+        * Links
+        * Address
+        * Contact
+ /
+
+ => Config Driven UI

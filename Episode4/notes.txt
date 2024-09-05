@@ -1,0 +1,16 @@
+====> Hooks
+useState()
+useEffect()
+
+React do efficient DOM manipulation.
+
+Whenever a state variable updates react will rerender the component.
+
+React use Reconciliation Algorithm which is also know as React Fiber.
+
+Virtual Dom - It is a representation of a actual DOM. it is in form of object.
+
+==> Diffing Algorithm - whenever a state variable update react reconcile the old Virtual DOM with New Virtual DOM and 
+              check the difference and then update the Actual DOM.
+            
+React Fiber - Read from here (https://github.com/acdlite/react-fiber-architecture)
